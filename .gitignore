@@ -1,0 +1,12 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# common
+/dist
+
+.env
+
+# mac os
+.DS_Store
+
+# dependencies
+node_modules
