@@ -1,8 +1,4 @@
-/**
- *
- * NProgress
- *
- */
+"use client";
 
 import Router from 'next/router';
 import * as NProgress from 'nprogress';
@@ -118,7 +114,7 @@ export default function NextNProgress({
   };
 
   return (
-    <style nonce={nonce}>{`:root{--nprogress-color:${color};--nprogress-height: ${height};}`}</style>
+    <style nonce={nonce}>{`:root{--nprogress-color:${color};--nprogress-height:${height}px;}`}</style>
   );
 }
 

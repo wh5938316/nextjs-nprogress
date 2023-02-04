@@ -1,11 +1,19 @@
 {
   "name": "@hoowong/nextjs-nprogress",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Nprogress component for Next.js app.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./css": "./dist/nprogress.css"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "npm run build:js && npm run build:css",
+    "build": "tsup",
     "build:js": "tsup src/index.tsx --format esm,cjs --dts",
     "build:css": "tsup src/nprogress.css"
   },

@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react",
     "declaration": true,
     "sourceMap": false,
-    "target": "es5",
+    "target": "esnext",
     "module": "ES2015",
     "moduleResolution": "node",
     "allowJs": false,
